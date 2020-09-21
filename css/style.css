@@ -1,0 +1,68 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /* prevents padding, borders and margin incresase element size */
+   overflow-x: hidden;
+}
+
+html {
+   /* default font size: 16px */
+   /* this line sets font-size: 10px */
+   font-size: 62.5%; 
+}
+
+
+/* ----- Global Classes ----- */
+a {
+   text-decoration: none;
+}
+
+.flex-row {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap; /* sets collapse accordingly */ 
+}
+
+ul {
+   list-style-type: none;
+}
+/* --x-- Global Classes --x-- */
+
+
+/* ----- NavBar ----- */
+.nav {
+   background: white;
+   padding: 0 4rem;
+   /* for colapse menu */
+   height: 0rem; 
+   min-height: 40vh;
+   overflow: hidden;
+   /* for colapse menu */
+}
+
+.nav .nav-menu {
+   justify-content: space-between;
+}
+
+.nav .nav-items {
+   display: flex;
+   margin: 0;
+}
+
+.nav .nav-items .nav-link {
+   padding: 1.8rem 1rem;
+   font-size: 1.6rem;
+   /* position: relative; */
+}
+
+.nav .social {
+   padding: 2rem 0;
+}
+
+.nav .nav-brand a { /* Title at top left position */
+   font-size: 2.6rem;
+   padding: 1rem 0;
+   display: block;
+}
+/* --x-- NavBar --x-- */
+
