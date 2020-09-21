@@ -12,7 +12,7 @@
    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
    /* Custom Variables for font-families */
-   --Abel: 'Abel', cursive;
+   --Abel: 'Abelito', cursive;
    --Anton: 'Anton', cursive;
    --Josefin: 'Josefin', cursive;
    --Lexend: 'Lexend', cursive;
@@ -57,13 +57,45 @@ ul {
    padding: 0 4rem;
    /* for colapse menu */
    height: 0rem; 
-   min-height: 40vh;
+   min-height: 15vh;
    overflow: hidden;
+   transition: height 1s ease-in-out; 
    /* for colapse menu */
 }
 
 .nav .nav-menu {
    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+   position: absolute;
+   top: 0%;
+   width: 85%;
+   cursor: pointer;
+   display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+   display: flex;
+   justify-content: flex-end;
+   padding: 2.1rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+   font-size: 2rem;
+   color: var(--text-gray);
+}
+
+.collapse {
+   height: 40rem;
+}
+
+.nav .nav-brand a {
+   /* Title at top left position */
+   font-size: 3rem;
+   padding: 1rem 0;
+   display: block;
+   font-family: var(--Lexend);
 }
 
 .nav .nav-items {
@@ -73,8 +105,17 @@ ul {
 
 .nav .nav-items .nav-link {
    padding: 1.8rem 1rem;
-   font-size: 1.6rem;
+   font-size: 2rem;
+   font-family: var(--Abel)
    /* position: relative; */
+}
+
+.nav .nav-items .nav-link:hover {
+   background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a {
+   color: var(--white);
 }
 
 .nav .social {
@@ -82,11 +123,28 @@ ul {
    font-size: 1.8rem;
 }
 
-.nav .nav-brand a { /* Title at top left position */
-   font-size: 2.6rem;
-   padding: 1rem 0;
-   display: block;
-   font-family: Abelito;
+.nav .social i {
+   padding: 0 .3rem;
+}
+
+.nav .social i:hover {
+   color: #a1c4cf;
 }
 /* --x-- NavBar --x-- */
+
+
+/* ----- Viewport less than or equal to 720px ----- */
+@media screen and (max-width: 720px) {
+   .nav .nav-menu, .nav .nav-items{
+      flex-direction: column;
+   }
+
+   .nav .toggle-collapse {
+      display: initial;
+   }
+
+}
+
+
+/* --x-- Viewport less than or equal to 720px --x-- */
 
