@@ -71,6 +71,10 @@ button.btn {
    font-family: var(--Livvic);
    cursor: pointer;
 }
+
+span {
+   font-family: var(--Abel);
+}
 /* --x-- Global Classes --x-- */
 
 
@@ -157,7 +161,7 @@ button.btn {
 
 /* ----- Main Content ----- */
 
-/* ----- Site Title ----- */
+/* ----- Site Title Section  ----- */
 main .site-title {
    background: url('../assets/Background-image.png');
    background-size: cover;
@@ -185,8 +189,54 @@ main .site-title .btn:hover {
    border:1px solid var(--white);
    color: var(--white);
 }
+/* --x-- Main Title Section --x-- */
 
-/* --x-- Site Title --x-- */
+/* ----- Blog Carousel (tiny-slider)  ----- */
+main .blog {
+   background: url('../assets/Abract01.png');
+   background-repeat: no-repeat;
+   background-position: right;
+   height: 100vh;
+   width: 100%;
+   overflow: hidden;
+   background-size: 65%;
+}
+
+main .blog .container {
+   margin: 0 2vw;
+}
+
+main .blog .blog-post {
+   padding-top: 6.5rem;
+}
+
+main .blog-post .blog-content {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   width: 80%;
+   margin: 3rem 2rem;
+   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+   /* overflow: hidden; */
+}
+
+main .blog-content .blog-title {
+   padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+   padding: 1rem 2.5rem;
+   background: var(--sky);
+   margin: 1rem;
+}
+
+main .blog-content span {
+   display: block;
+   font-size: 1.6rem;
+}
+
+/* --x-- Blog Carousel (tiny-slider) --x-- */
+
 
 
 

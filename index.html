@@ -7,8 +7,14 @@
       <meta name="description" content="Building a great blog using html5 css3 and js">
       <meta name="robots" content="noindex,nofollow">
       <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- this line makes the site responsive -->
+      
       <!-- Font Awesome icons -->
       <link rel="stylesheet" href="./css/all.css">      
+      
+      <!-- Owl Carousel -->
+      <link rel="stylesheet" href="./css/owl.carousel.css">      
+      <link rel="stylesheet" href="./css/owl.theme.default.css">      
+
       <!-- Custom styles -->
       <link rel="stylesheet" href="./css/style.css">      
    </head>
@@ -55,6 +61,7 @@
       </header>
 
       <main>
+
          <!----- Site Title ----->
          <section class="site-title">
             <div class="site-background">
@@ -64,12 +71,51 @@
             </div>
          </section>
          <!--x-- Site Title --x-->
+
+         <!----- Blog Carousel (owl-carousel) ----->
+         <section>
+            <div class="blog">
+               <div class="container">
+                  <div class="owl-carousel owl-theme blog-post">
+                     <div class="blog-content">
+                        <img src="/assets/Blog-post/post-1.jpg" alt="post-1">
+                        <div class="blog-title">
+                           <h3>London Fashion week's continued the evolution </h3>
+                           <button class="btn btn-blog">Fashion</button>
+                           <span>2 minutes</span>
+                        </div>
+                     </div>                   
+                     <div class="blog-content">
+                        <img src="/assets/Blog-post/post-2.jpg" alt="post-2">
+                        <div class="blog-title">
+                           <h3>London Fashion week's continued the evolution </h3>
+                           <button class="btn btn-blog">Fashion</button>
+                           <span>2 minutes</span>
+                        </div>
+                     </div>                   
+                     <div class="blog-content">
+                        <img src="/assets/Blog-post/post-3.jpg" alt="post-3">
+                        <div class="blog-title">
+                           <h3>London Fashion week's continued the evolution </h3>
+                           <button class="btn btn-blog">Fashion</button>
+                           <span>2 minutes</span>
+                        </div>
+                     </div>
+                 </div>
+               </div>
+            </div>
+         </section>
+         <!--x-- Blog Carousel (owl-carousel) --x-->
+
       </main>
 
       <!-- Jquery Library -->
       <script src="./js/jquery-3.5.1.js"></script>
-      
+      <!-- Owl Carousel -->
+      <script src="./js/owl.carousel.js"></script>      
       <!-- Custom Javascript file -->
       <script src="./js/main.js" async defer></script>
+
    </body>
+
 </html>
