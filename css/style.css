@@ -338,6 +338,25 @@ main .post-content .post-title a {
    color: black;
 }
 
+.site-content .sidebar .popular-posts .post-content {
+   padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-posts h2 {
+   padding-top: 8rem;
+}
+
+.site-content .sidebar .popular-posts .post-info {
+   padding: 0.6rem .3rem !important;
+   bottom: 0rem !important;
+   left: 1.7rem !important;
+   border-radius: 0rem !important;
+   background: var(--white) !important;
+}
+
+.site-content .sidebar .popular-posts .post-title a {
+   font-size: 1.2rem;
+}
 
 
 /*--x-- Right column (30%) Sidebar --x--*/
