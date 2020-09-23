@@ -358,6 +358,28 @@ main .post-content .post-title a {
    font-size: 1.2rem;
 }
 
+.site-content .sidebar .newsletter {
+   padding-top: 3.2rem;
+}
+
+.site-content .sidebar .newsletter .form-element {
+   padding: .7rem 2.2rem;
+}
+
+.site-content .sidebar .newsletter .input-element {
+   width: 80%;
+   right: 2.1rem;
+   padding: .5rem .7rem;
+   font-family: var(--Lexend);
+   font-size: 1.2rem;
+}
+
+.site-content .sidebar .newsletter .form-btn {
+   border-radius: 0;
+   padding: .8rem 30%;
+   margin: 1rem 0;
+   background: var(--sky);
+}
 
 /*--x-- Right column (30%) Sidebar --x--*/
 
